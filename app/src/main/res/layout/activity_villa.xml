@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ApartActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:hint="동 검색"
+                android:background="@drawable/custom_btn2"
+                android:fontFamily="@font/cartoonbold"
+                android:lines="1"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/search_text2"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:hint="빌라 이름 검색"
+                android:background="@drawable/custom_btn2"
+                android:fontFamily="@font/cartoonbold"
+                android:lines="1"
+                android:padding="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="적용"
+                android:background="@drawable/custom_btn2"
+                android:drawableLeft="@drawable/ic_baseline_search_24"/>
+
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/reset_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="초기화"
+                android:background="@drawable/custom_btn2"
+                android:drawableLeft="@drawable/ic_baseline_replay_24"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:dividerHeight="10dp"
+        android:divider="#FFFFFF"
+        android:fontFamily="@font/cartoonbold"
+        android:id="@+id/villa_list"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

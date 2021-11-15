@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC107"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:background="@drawable/asd"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"/>
+
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/edtId"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_btn2"
+        android:fontFamily="@font/cartoonbold"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:hint="username"
+        android:lines="1"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edtPw"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cartoonbold"
+        android:background="@drawable/custom_btn2"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login_btn"
+            android:text="login"
+            android:layout_weight="1"
+            android:fontFamily="@font/cartoonbold"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/Join_btn"
+            android:text="Join"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:fontFamily="@font/cartoonbold"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
